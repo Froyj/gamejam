@@ -1,5 +1,6 @@
 import './App.css';
 import Jauge from './components/Jauge';
+import Card from './components/Card';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Jauge progress={50}/>
       <Jauge progress={24}/>
       <Jauge progress={30}/>
+      <Card event.chapter=""/>
     </div>
   );
 }

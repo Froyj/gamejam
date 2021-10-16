@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Card from './components/Card';
 import JaugeBar from './components/JaugeBar';
+import DialogBox from './components/DialogBox';
 import './App.css';
 
 function App() {
@@ -30,6 +31,9 @@ function App() {
       img: "/assets/bacteria.png"
     }
   })
+
+  const [currentChapter, setCurrentChapter] = useState(1)
+  const [currentEvent, setCurrentEvent] = useState(1);
 
   const handleGauges = (name, mod) => {
     setGauges({
@@ -66,9 +70,10 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="App chapter1">
       <JaugeBar gaugesLvl={gauges}/>
       <button onClick={() => handleGauges("fuel", 10)}>fill the tank</button>
+      <DialogBox content="In the year 20XX, jklsdlfj kljdsfklj ,mlsdkjfsklfjsdlkj"/>
       <Card event={tryEvent} />
     </div>
   );

@@ -1,7 +1,5 @@
-import React from "react";
-
 const chapters = [
-    chapter: {
+    {
         id: 1,
         event: [
             {
@@ -11,16 +9,16 @@ const chapters = [
                 location: "A bord du vaisseau",
                 answers: [
                     {
-                        id: #,
+                        id: 1.1,
                         text: "Oui",
-                        type: "fioul",
-                            value: -2
+                        gaugeType: "fuel",
+                        mod: -5
                     },
                     {
-                        id: #,
+                        id: 1.2,
                         text: "Non",
-                        type: none,
-                            value: 0   
+                        gaugeType: "virus",
+                        mod: 2   
                     }
                 ]
             },
@@ -31,16 +29,16 @@ const chapters = [
                 location: "",
                 answers: [
                     {
-                    id: #,
+                    id: 2.1,
                     text: "...",
-                    type.
-                        value: - +,
-                    }, 
-                    id: #,
-                        text: "...",
-                        type.
-                            value: - +,
-                    },
+                    gaugeType: "health",
+                    mod: 20,
+                    },  {
+                      id: 2.2,
+                      text: "...",
+                      gaugeType: "health",
+                      mod: -10,
+                  },
                 {
                 id: 3,
                 text: "...",

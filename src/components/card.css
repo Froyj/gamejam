@@ -19,3 +19,7 @@
 .card p {
     color: whitesmoke;
 }
+
+.card img {
+    width: 100%;
+}

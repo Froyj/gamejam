@@ -5,7 +5,7 @@
     align-items: center;
     width: 70%;
     margin: auto;
-    padding: 50px;
+    padding: 1rem;
     border: solid 3px black;
     box-shadow: black 3px;
     border-radius: 25px;
@@ -18,8 +18,14 @@
 
 .card p {
     color: whitesmoke;
+    margin: 1rem;
+}
+
+.location {
+    margin-top: Opx !important;
 }
 
 .card img {
     width: 100%;
+    border: solid 1px grey;
 }

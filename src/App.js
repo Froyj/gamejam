@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import Card from './components/Card';
 import JaugeBar from './components/JaugeBar';
 import './App.css';
@@ -44,8 +44,10 @@ function App() {
   const tryEvent = ({
       id: 1,
       text: "Vous vous approchez de la planète NH-781. Voulez-vous tenter de les contacter ?",
-      img: "",
+      img: "/assets/postapocalypse4.png",
       location: "A bord du vaisseau",
+      firstChoise: "Oui",
+      secondChoise: "Non",
       answers: [
           {
               id: 1.1,

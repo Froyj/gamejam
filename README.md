@@ -68,3 +68,33 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+----------------------------------------------
+Introduction :
+    - un enquêteur de l'espace est envoyé dans un coin reculé de la galaxie pour enquêter sur une mystérieuse planête.
+    - scène apocalyptique (beaucoup de dégats mais les batiments sont toujours visitables)
+    - il erre afin de trouver des indices
+    
+    chapitre 1: arrivée de la planête
+    - mise en contexte
+    - dans le vaisseau, tester le système de choix
+    - tester les signaux de radio
+
+    chapitre 2: découverte de la planête
+    - exploration d'une ville :
+        -maison
+        -école
+        -métro
+    -possibilité d'entrer des lieux où on propose 3 events
+
+
+    chapitre 3: éludé le mystère
+    -découverte d'un bunker scientifique
+    - évènement en chaine
+
+
+    conclusion : 2 fins possibles
+    - Un virus hautement contagieux et incurable a mené la planête à la destruction : l'enquêteur apprend cette nouvelle et découvre qu'il est condamné et meurt sur cette planete pour épargner sa mif
+    - une possibilité de sortie de secours si on possède un collectible spécifique et que les jauges fioul et virus ne soient pas vide
+    - il ne decouvre pas qu'il est atteint de la maladie et repart sur sa planète en amenant le virus ce qui condammne sa planete à son tour et tue tout le monde -> boucle on repart à 0

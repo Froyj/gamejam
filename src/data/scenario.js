@@ -18,8 +18,8 @@ const chapters = [
           {
             id: 1.2,
             text: "Non",
-            gaugeType: "virus",
-            mod: 2
+            gaugeType: "fuel",
+            mod: -5
           }
         ]
       },

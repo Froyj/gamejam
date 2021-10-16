@@ -1,0 +1,21 @@
+.App {
+
+}
+
+.chapter1 {
+  background-image: url("http://localhost:3000/assets/chapter1-background.jpg");
+  background-position: center;
+  height: 100vh;
+}
+
+.dialogBox {
+  padding: 2rem;
+  width: 80%;
+  margin: auto;
+  background-color: rgb(40, 40, 40, 0.8);
+  font-family: 'Turret Road', cursive;
+  font-size: 32px;
+  font-weight: 700;
+  color: #DDD;
+
+}

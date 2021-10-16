@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import Jauge from './components/Jauge';
-import './App.css';
 import JaugeBar from './components/JaugeBar';
+import './App.css';
 
 function App() {
   const [gauges, setGauges] = useState({

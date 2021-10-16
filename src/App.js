@@ -2,6 +2,8 @@ import { useState } from 'react';
 import Card from './components/Card';
 import JaugeBar from './components/JaugeBar';
 import DialogBox from './components/DialogBox';
+import Landing from './components/Landing'
+import landing from './data/landing';
 import './App.css';
 
 function App() {
@@ -71,6 +73,7 @@ function App() {
 
   return (
     <div className="App chapter1">
+      <Landing landing={landing}/>
       <JaugeBar gaugesLvl={gauges}/>
       <DialogBox content="In the year 20XX, jklsdlfj kljdsfklj ,mlsdkjfsklfjsdlkj"/>
       <Card event={tryEvent} />

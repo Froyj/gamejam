@@ -3,6 +3,7 @@
 }
 
 .chapter1 {
+  padding-top: 5rem ;
   background-image: url("http://localhost:3000/assets/chapter1-background.jpg");
   background-position: center;
   height: 100vh;

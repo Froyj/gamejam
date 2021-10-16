@@ -1,6 +1,6 @@
 import React from "react";
 
-const Answers = ({props}) => (
+const Answers = (props) => (
     <button> {props.firstAnswer} </button>
 )
 

@@ -1,0 +1,25 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    margin: auto;
+    padding: 50px;
+    border: solid 3px black;
+    box-shadow: black 3px;
+    border-radius: 25px;
+    min-height: 30rem;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(http://localhost:3000/assets/CardBackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.card p {
+    color: whitesmoke;
+}
+
+.card img {
+    width: 100%;
+}

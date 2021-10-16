@@ -50,7 +50,7 @@ function App() {
   const tryEvent = ({
       id: 1,
       text: "Vous vous approchez de la planète NH-781. Voulez-vous tenter de les contacter ?",
-      img: "/assets/postapocalypse4.png",
+      img: "/assets/planet1.png",
       location: "A bord du vaisseau",
       firstChoise: "Oui",
       secondChoise: "Non",
@@ -72,11 +72,24 @@ function App() {
 
 
   return (
-    <div className="App chapter1">
+    <div>
+      <div className="App landing-page">
+        <h1>TITRE DU JEU</h1>
       <Landing landing={landing}/>
+      </div>
+    <div className="App chapter1"> 
       <JaugeBar gaugesLvl={gauges}/>
       <DialogBox content="In the year 20XX, jklsdlfj kljdsfklj ,mlsdkjfsklfjsdlkj"/>
       <Card event={tryEvent} />
+    </div>
+    <div className="App chapter2"> 
+      <JaugeBar gaugesLvl={gauges}/>
+      <Card event={tryEvent} />
+    </div>
+    <div className="App chapter3"> 
+      <JaugeBar gaugesLvl={gauges}/>
+      <Card event={tryEvent} />
+    </div>
     </div>
   );
 }

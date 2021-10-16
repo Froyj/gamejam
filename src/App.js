@@ -72,7 +72,6 @@ function App() {
   return (
     <div className="App chapter1">
       <JaugeBar gaugesLvl={gauges}/>
-      <button onClick={() => handleGauges("fuel", 10)}>fill the tank</button>
       <DialogBox content="In the year 20XX, jklsdlfj kljdsfklj ,mlsdkjfsklfjsdlkj"/>
       <Card event={tryEvent} />
     </div>

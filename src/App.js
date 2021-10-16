@@ -9,16 +9,19 @@ function App() {
       progress: 35,
       color: "violet",
       visible: true,
+      img: "/assets/fuel.png"
     },
     oxygen: {
       progress: 20,
       color: "blue",
-      visible: true
+      visible: true,
+      img: "/assets/o2.png"
     },
     health: {
       progress: 50,
       color: "green",
-      visible: true
+      visible: true,
+      img: "/assets/health.png"
     },
     contamination: {
       progress: 0,

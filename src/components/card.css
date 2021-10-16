@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 30%;
+    width: 70%;
     margin: auto;
     padding: 50px;
     border: solid 3px black;
@@ -13,7 +13,7 @@
     background-image:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(http://localhost:3000/assets/CardBackground.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: 200%;
 }
 
 .card p {

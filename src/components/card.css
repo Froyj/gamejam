@@ -3,9 +3,9 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 30%;
+    width: 70%;
     margin: auto;
-    padding: 50px;
+    padding: 1rem;
     border: solid 3px black;
     box-shadow: black 3px;
     border-radius: 25px;
@@ -13,13 +13,31 @@
     background-image:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(http://localhost:3000/assets/CardBackground.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: 200%;
 }
 
 .card p {
     color: whitesmoke;
+    margin: 1rem;
+}
+
+.location {
+    margin-top: Opx !important;
 }
 
 .card img {
     width: 100%;
+    border: solid 1px grey;
+}
+
+@media screen and (min-width: 1000px) {
+    .card {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .card {
+        width: 40%;
+    }
 }

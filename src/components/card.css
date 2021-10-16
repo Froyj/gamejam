@@ -29,3 +29,15 @@
     width: 100%;
     border: solid 1px grey;
 }
+
+@media screen and (min-width: 1000px) {
+    .card {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .card {
+        width: 40%;
+    }
+}

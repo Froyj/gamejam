@@ -1,6 +1,5 @@
-import './jauge.module.css';
 
-function Jauge({ progress, visible = true, type, color = 'red' }) {
+function Jauge({ progress, visible = true, color = 'red' }) {
   if (visible) {
     return (
       <svg
@@ -15,7 +14,7 @@ function Jauge({ progress, visible = true, type, color = 'red' }) {
           x='0'
           y='0'
           width={26}
-          height={100}
+          height={106}
           fill='none'
         />
         <rect

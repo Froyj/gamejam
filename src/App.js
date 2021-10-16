@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import Card from './components/Card';
 import JaugeBar from './components/JaugeBar';
 import './App.css';
 
@@ -40,10 +41,35 @@ function App() {
     })
   }
 
+  const tryEvent = ({
+      id: 1,
+      text: "Vous vous approchez de la planète NH-781. Voulez-vous tenter de les contacter ?",
+      img: "/assets/postapocalypse4.png",
+      location: "A bord du vaisseau",
+      firstChoise: "Oui",
+      secondChoise: "Non",
+      answers: [
+          {
+              id: 1.1,
+              text: "Oui",
+              type: "fioul",
+                  value: -2
+          },
+          {
+              id: 1.2,
+              text: "Non",
+              type: "virus",
+              value: 0   
+          }
+      ]
+  })
+
+
   return (
     <div className="App">
       <JaugeBar gaugesLvl={gauges}/>
       <button onClick={() => handleGauges("fuel", 10)}>fill the tank</button>
+      <Card event={tryEvent} />
     </div>
   );
 }

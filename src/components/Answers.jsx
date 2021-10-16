@@ -1,7 +1,7 @@
 import React from "react";
 
-const Answers = (event.answers) => {
-    <div>.map</div>
-}
+const Answers = ({props}) => (
+    <button> {props.firstAnswer} </button>
+)
 
 export default Answers;

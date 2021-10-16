@@ -39,6 +39,28 @@ function App() {
     })
   }
 
+  const tryEvent = ({
+      id: 1,
+      text: "Vous vous approchez de la planète NH-781. Voulez-vous tenter de les contacter ?",
+      img: "",
+      location: "A bord du vaisseau",
+      answers: [
+          {
+              id: 1.1,
+              text: "Oui",
+              type: "fioul",
+                  value: -2
+          },
+          {
+              id: 1.2,
+              text: "Non",
+              type: "virus",
+              value: 0   
+          }
+      ]
+  })
+
+
   return (
     <div className="App">
       <Jauge progress={50} visible color="green"/>
@@ -46,7 +68,7 @@ function App() {
       <Jauge progress={50}/>
       <Jauge progress={24}/>
       <Jauge progress={30}/>
-      <Card event=""/>
+      <Card event={tryEvent} />
       <JaugeBar gaugesLvl={gauges}/>
       <button onClick={() => handleGauges("fuel", 10)}>fill the tank</button>
     </div>

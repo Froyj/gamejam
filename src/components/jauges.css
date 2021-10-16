@@ -1,0 +1,15 @@
+.gaugeBar {
+  display: flex;
+  flex-direction: row;
+}
+
+.gauge {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}

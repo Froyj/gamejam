@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import Jauge from './components/Jauge';
 import Card from './components/Card';
 import JaugeBar from './components/JaugeBar';
 import './App.css';
@@ -10,16 +9,19 @@ function App() {
       progress: 35,
       color: "violet",
       visible: true,
+      img: "/assets/fuel.png"
     },
     oxygen: {
       progress: 20,
       color: "blue",
-      visible: true
+      visible: true,
+      img: "/assets/o2.png"
     },
     health: {
       progress: 50,
       color: "green",
-      visible: true
+      visible: true,
+      img: "/assets/health.png"
     },
     contamination: {
       progress: 0,
@@ -63,14 +65,9 @@ function App() {
 
   return (
     <div className="App">
-      <Jauge progress={50} visible color="green"/>
-      <Jauge progress={80} color="blue"/>
-      <Jauge progress={50}/>
-      <Jauge progress={24}/>
-      <Jauge progress={30}/>
-      <Card event={tryEvent} />
       <JaugeBar gaugesLvl={gauges}/>
       <button onClick={() => handleGauges("fuel", 10)}>fill the tank</button>
+      <Card event={tryEvent} />
     </div>
   );
 }

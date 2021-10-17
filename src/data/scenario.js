@@ -1,5 +1,5 @@
 
-const chapters = [
+export const scenario = [
   {
     id: 1,
     name: "The beginning",

@@ -26,15 +26,15 @@ h1 {
 }
 
 .chapter2 {
-  padding-top: 5rem ;
+  padding-top: 1rem ;
   padding-bottom: 2rem;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("http://localhost:3000/assets/War2.png");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("http://localhost:3000/assets/PlanetNH-781.png");
   background-position: center;
   height: 100vh;
 }
 
 .chapter3 {
-  padding-top: 5rem ;
+  padding-top: 1rem ;
   padding-bottom: 2rem;
   background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("http://localhost:3000/assets/postapocalypse4.png");
   background-position: center;

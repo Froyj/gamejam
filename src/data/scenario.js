@@ -387,7 +387,7 @@ export const scenario = [
       {
         id: 7,
         text: "Vous vous rapprocher de l'agitation. Vous attrapez une page de journal volante, en rouge sont notés les mots: THE END IS NEAR",
-        img: "/assests/RedPaper.png",
+        img: "/assets/Newspaper.png",
         location: "Le tunnel",
         answers: [
           {
@@ -427,7 +427,7 @@ export const scenario = [
       {
         id: 11,
         text: "Vous observez le quai. Une porte du personnel est entrouverte, vous fouillez cette pièce et trouvez des seringues usagées. Il n'y a rien d'autre à voir ici.",
-        img: "/assets/Syringe-Underground.png",
+        img: "/assets/Sirynge-Underground.png",
         location: "Quai de la station",
         answers: [
           {
@@ -447,7 +447,7 @@ export const scenario = [
       {
         id: 13,
         text: "A BASE DE MOLECULES DE WCS-33 ET DE ZESPLIOL",
-        img: "/assets/Syringe-Underground-Notice.png",
+        img: "/assets/Sirynge-Underground-Notice.png",
         location: "Quai de la station",
         answers: [
           {
@@ -520,7 +520,7 @@ export const scenario = [
         ]
       },
       {
-      id: 10,
+      id: 27,
       text: "Il s'agit d'un tube pour syphonner les voitures. Vous testez plusieurs voitures, elles sont à sec.",
       img: "/assets/Petrol-Station-Tube.png",
       location: "Station essence",

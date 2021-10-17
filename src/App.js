@@ -92,7 +92,7 @@ function App() {
       <Switch>
         <Route exact path="/">
           <div className="App landing-page">
-            <h1>TITRE DU JEU</h1>
+            <h1>PLANET RESCUE</h1>
             <Landing landing={landing} />
           </div>
         </Route>

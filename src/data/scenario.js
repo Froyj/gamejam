@@ -522,7 +522,7 @@ export const scenario = [
       {
       id: 10,
       text: "Il s'agit d'un tube pour syphonner les voitures. Vous testez plusieurs voitures, elles sont à sec.",
-      img: "",
+      img: "/assets/Petrol-Station-Tube.png",
       location: "Station essence",
       answers: [
         {
@@ -542,7 +542,7 @@ export const scenario = [
       {
         id: 31,
         text: "Quelques rues plus loin, vous remarquez une école primaire délabrée dont le mur ébréché permet une intrusion.",
-        img: "",
+        img: "/assets/War.png",
         location: "Avenue détruite",
         answers: [
           {
@@ -562,7 +562,7 @@ export const scenario = [
       {
         id: 33,
         text: "La salle de classe est couverte de poussière et de déchets. Une étrange boite scellée est posée sur une table au centre de la pièce.",
-        img: "",
+        img: "/assets/box-school.png",
         location: "Salle de classe",
         answers: [
           {
@@ -582,7 +582,7 @@ export const scenario = [
       {
         id: 35,
         text: "La boite est vide, mais une odeur inconnue s'en dégage. Vous sentez votre tête tourner.",
-        img: "",
+        img: "/assets/box-school-open.png",
         location: "Salle de classe",
         answers: [
           {
@@ -602,7 +602,7 @@ export const scenario = [
       {
         id: 37,
         text: "Vous entrez dans un couloir mais vous peinez à avancer tant l'odeur persiste. Deux portes se trouvent au fond de ce couloir.",
-        img: "",
+        img: "/assets/doors-school.png",
         location: "Couloir de l'école",
         answers: [
           {
@@ -622,7 +622,7 @@ export const scenario = [
       {
         id: 41,
         text: "L'odeur se dissipe et vous reprenez vos esprits. Vous trouvez une note manuscrite presque illisible, vous parvenez à déchiffrer les lettres B, K, R.",
-        img: "",
+        img: "/assets/doors-school-1.png",
         location: "Porte 1 dans l'école",
         answers: [
           {
@@ -636,7 +636,7 @@ export const scenario = [
       {
         id: 39,
         text: "C'est un cul-de-sac, l'odeur se fait de plus en plus entêtante, vous manquez de vous évanouir, vous ne pouvez rester plus longtemps ici.",
-        img: "",
+        img: "/assets/doors-school-2.png",
         location: "Porte 2 dans l'école",
         answers: [
           {

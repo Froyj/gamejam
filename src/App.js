@@ -2,6 +2,8 @@ import { useState } from 'react';
 import Card from './components/Card';
 import JaugeBar from './components/JaugeBar';
 import DialogBox from './components/DialogBox';
+import Landing from './components/Landing'
+import landing from './data/landing';
 import './App.css';
 
 import scenario from './data/scenario'
@@ -57,35 +59,26 @@ function App() {
     setCurrentEvent(event)
   }
 
-  const tryEvent = ({
-    id: 1,
-    text: "Vous vous approchez de la planète NH-781. Voulez-vous tenter de les contacter ?",
-    img: "/assets/postapocalypse4.png",
-    location: "A bord du vaisseau",
-    firstChoise: "Oui",
-    secondChoise: "Non",
-    answers: [
-      {
-        id: 1.1,
-        text: "Oui",
-        type: "fioul",
-        value: -2
-      },
-      {
-        id: 1.2,
-        text: "Non",
-        type: "virus",
-        value: 0
-      }
-    ]
-  })
-
 
   return (
-    <div className="App chapter1">
-      <JaugeBar gaugesLvl={gauges} />
-      <DialogBox content="In the year 20XX, jklsdlfj kljdsfklj ,mlsdkjfsklfjsdlkj" />
+    <div>
+      <div className="App landing-page">
+        <h1>TITRE DU JEU</h1>
+      <Landing landing={landing}/>
+      </div>
+    <div className="App chapter1"> 
+      <JaugeBar gaugesLvl={gauges}/>
+      <DialogBox content="In the year 20XX, jklsdlfj kljdsfklj ,mlsdkjfsklfjsdlkj"/>
       <Card event={tryEvent} />
+    </div>
+    <div className="App chapter2"> 
+      <JaugeBar gaugesLvl={gauges}/>
+      <Card event={tryEvent} />
+    </div>
+    <div className="App chapter3"> 
+      <JaugeBar gaugesLvl={gauges}/>
+      <Card event={tryEvent} />
+    </div>
     </div>
   );
 }

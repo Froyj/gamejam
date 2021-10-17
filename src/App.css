@@ -2,8 +2,41 @@
 
 }
 
+h1 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+}
+
+.landing-page {
+  padding-top: 2rem ;
+  background-image: url("http://localhost:3000/assets/stars.png");
+  background-position: center;
+  height: 100vh;
+}
+
 .chapter1 {
-  background-image: url("http://localhost:3000/assets/chapter1-background.jpg");
+  padding-top: 5rem ;
+  padding-bottom: 10rem;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("http://localhost:3000/assets/chapter1-background.jpg");
+  background-position: center;
+  height: 100vh;
+}
+
+.chapter2 {
+  padding-top: 5rem ;
+  padding-bottom: 2rem;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("http://localhost:3000/assets/War2.png");
+  background-position: center;
+  height: 100vh;
+}
+
+.chapter3 {
+  padding-top: 5rem ;
+  padding-bottom: 2rem;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("http://localhost:3000/assets/postapocalypse4.png");
   background-position: center;
   height: 100vh;
 }

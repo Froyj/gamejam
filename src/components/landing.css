@@ -1,0 +1,32 @@
+.landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: solid 3px black;
+    box-shadow: black 3px;
+    border-radius: 25px;
+    min-height: 30rem;
+    background-color:  rgba(44, 44, 44, 0.9);
+}
+
+.landing p, .landing h2 {
+    color: white;
+    margin: 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+    .landing {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .landing {
+        width: 40%;
+    }
+}

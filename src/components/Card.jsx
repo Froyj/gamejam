@@ -1,18 +1,42 @@
-import React from "react";
-import "./card.css"
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './card.css';
 
-const Card = ({ event }) => (
-    <div className="card">
-        <img src={event.img}></img>
-        <p class="location">{event.location}</p>
+const Card = ({ event, handleAnswer }) => {
+  const { img, location, text, answers, endOfChapter } = event;
+  if (event) {
+    return (
+      <div className='card'>
+        <img src={img}></img>
+        <p class='location'>{location}</p>
         <p>{event.text}</p>
-        <div>
-            <button>{event.firstChoise}</button>
-            <button>{event.secondChoise}</button>
-        </div>
-
-        {/* < Answers/> */}
-    </div>
-)
+        {answers.map((a) => {
+          if (a.link) {
+            return (
+              <Link to={a.link}>
+                <button
+                  onClick={() =>
+                    handleAnswer(a.gaugeType, a.mod, endOfChapter, a.nextEvent)
+                  }
+                >
+                  {a.text}
+                </button>
+              </Link>
+            );
+          }
+          return (
+            <button
+              onClick={() =>
+                handleAnswer(a.gaugeType, a.mod, endOfChapter, a.nextEvent)
+              }
+            >
+              {a.text}
+            </button>
+          );
+        })}
+      </div>
+    );
+  } else return null;
+};
 
 export default Card;

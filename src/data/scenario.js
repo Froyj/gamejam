@@ -334,18 +334,18 @@ export const scenario = [
             text: "Enfiler la combinaison",
             gaugeType: null,
             mod: null,
-            nextEvent: 1
+            nextEvent: 3
           },
           {
             text: "Sortir sans la combinaison",
             gaugeType: "virus",
             mod: 10,
-            nextEvent: 1
+            nextEvent: 3
           },
         ]
       },
       {
-        id: 1,
+        id: 3,
         text: "Une bouche de métro est à quelques pas.",
         img: "/assets/City1.png",
         location: "Grande rue, ville déserte",
@@ -354,18 +354,18 @@ export const scenario = [
             text: "Explorer la station",
             gaugeType: "oxygen",
             mod: -5,
-            nextEvent: 2
+            nextEvent: 5
           },
           {
             text: "Aller ailleurs",
             gaugeType: null,
             mod: null,
-            nextEvent: 7
+            nextEvent: 21
           },
         ]
       },
       {
-        id: 2,
+        id: 5,
         text: "Vous descendez les marches, un fracas au loin se fait entendre, sur les rails du métro plonger dans la pénombre.",
         img: "/assets/postapocalypse4.png",
         location: "Quai de la station",
@@ -374,19 +374,19 @@ export const scenario = [
             text: "Chercher la source du bruit",
             gaugeType: null,
             mod: null,
-            nextEvent: 3
+            nextEvent: 7
           },
           {
             text: "Fouiller le quai de la station",
             gaugeType: null,
             mod: null,
-            nextEvent: 5
+            nextEvent: 11
           },
         ]
       },
       {
-        id: 3,
-        text: "Vous vous rapprocher de l'agitation. Vous attrapez un papier volant, en rouge est noté: THE END IS NEAR",
+        id: 7,
+        text: "Vous vous rapprocher de l'agitation. Vous attrapez une page de journal volante, en rouge sont notés les mots: THE END IS NEAR",
         img: "/assests/RedPaper.png",
         location: "Le tunnel",
         answers: [
@@ -394,39 +394,39 @@ export const scenario = [
             text: "Fuir",
             gaugeType: null,
             mod: null,
-            nextEvent: 5
+            nextEvent: 11
           },
           {
             text: "Continuer d'avancer",
             gaugeType: "health",
             mod: -5,
-            nextEvent: 4
+            nextEvent: 9
           },
         ]
       },
       {
-        id: 4,
+        id: 9,
         text: "Une ombre derrière un wagon accidenté attire votre oeil. Vous le contournez et découvrez un drap flottant entourant un campement abandonné.",
         img: "/assets/postapocalypse4.png",
         location: "Le tunnel",
         answers: [
           {
-            text: "Ne rien toucher",
+            text: "Ne rien toucher et repartir",
             gaugeType: null,
             mod: null,
-            nextEvent: 5
+            nextEvent: 11
           },
           {
             text: "Fouiller les affaires et revenir sur le quai",
             gaugeType: "health",
             mod: 15,
-            nextEvent: 5
+            nextEvent: 11
           },
         ]
       },
       {
-        id: 5,
-        text: "Une porte du personnel est entrouverte, vous fouillez cette pièce et trouvez des seringues usagées. Il n'y a rien d'autre à voir ici.",
+        id: 11,
+        text: "Vous observez le quai. Une porte du personnel est entrouverte, vous fouillez cette pièce et trouvez des seringues usagées. Il n'y a rien d'autre à voir ici.",
         img: "/assets/Syringe-Underground.png",
         location: "Quai de la station",
         answers: [
@@ -434,18 +434,18 @@ export const scenario = [
             text: "Retourner dans la rue",
             gaugeType: null,
             mod: null,
-            nextEvent: 5
+            nextEvent: 21
           },
           {
             text: "Lire les composants de la seringue",
             gaugeType: "virus",
             mod: 10,
-            nextEvent: 6
+            nextEvent: 13
           },
         ]
       },
       {
-        id: 6,
+        id: 13,
         text: "A BASE DE MOLECULES DE WCS-33 ET DE ZESPLIOL",
         img: "/assets/Syringe-Underground-Notice.png",
         location: "Quai de la station",
@@ -454,12 +454,12 @@ export const scenario = [
             text: "Retourner dans la rue",
             gaugeType: null,
             mod: null,
-            nextEvent: 7
+            nextEvent: 21
           },
         ]
       },
       {
-        id: 7,
+        id: 21,
         text: "Vous voyez au loin un bâtiment qui ressemble à une station essence",
         img: "/assets/Petrol-Station.png",
         location: "Grande Rue",
@@ -468,18 +468,18 @@ export const scenario = [
             text: "Ignorer et s'enfoncer dans la ville",
             gaugeType: null,
             mod: null,
-            nextEvent: 14
+            nextEvent: 31
           },
           {
             text: "Se diriger vers le bâtiment",
             gaugeType: "health",
             mod: -5,
-            nextEvent: 8
+            nextEvent: 23
           }
         ]
       },
       {
-        id: 8,
+        id: 23,
         text: "Une fois à la station, vous constatez qu'il y a des pompes à essence mais elles sont vides.",
         img: "/assets/Petrol-Station.png",
         location: "Station essence",
@@ -488,34 +488,34 @@ export const scenario = [
             text: "Vous retournez dans la rue",
             gaugeType: null,
             mod: null,
-            nextEvent: 14
+            nextEvent: 41
           },
           {
             text: "Explorer le bâtiment",
-            gaugeType: null,
-            mod: null,
-            nextEvent: 9
+            gaugeType: health,
+            mod: -5,
+            nextEvent: 25
           }
         ]
       },
       
       {
-        id: 9,
+        id: 25,
         text: "A l'intérieur du bâtiment vous trouvez un tube en plastique sur le sol",
         img: "/assets/Petrol-Station-Tube.png",
         location: "Station essence",
         answers: [
           {
             text: "Ne pas ramasser et retourner dans la rue",
-            gaugeType: null,
-            mod: null,
-            nextEvent: 14
+            gaugeType: health,
+            mod: -5,
+            nextEvent: 31
           },
           {
             text: "Ramasser",
             gaugeType: null,
             mod: null,
-            nextEvent: 10
+            nextEvent: 27
           }
         ]
       },
@@ -527,20 +527,20 @@ export const scenario = [
       answers: [
         {
           text: "Continuer ?",
-          gaugeType: null,
-          mod: null,
-          nextEvent: 14
+          gaugeType: "fuel",
+          mod: 20,
+          nextEvent: 31
         },
         {
-          text: "Vous n'en voyez pas l'utilité et retournez dans la rue",
+          text: "Tant pis revenir dans la rue",
           gaugeType: null,
           mod: null,
-          nextEvent: 14
+          nextEvent: 31
         }
       ]
     },
       {
-        id: 14,
+        id: 31,
         text: "Quelques rues plus loin, vous remarquez une école primaire délabrée dont le mur ébréché permet une intrusion.",
         img: "",
         location: "Avenue détruite",
@@ -549,18 +549,18 @@ export const scenario = [
             text: "Retourner au vaisseau",
             gaugeType: null,
             mod: null,
-            nextEvent: 20
+            nextEvent: 51
           },
           {
             text: "Entrer dans l'école",
             gaugeType: "health",
-            mod: -10,
-            nextEvent: 15
+            mod: -5,
+            nextEvent: 33
           }
         ]
       },
       {
-        id: 15,
+        id: 33,
         text: "La salle de classe est couverte de poussière et de déchets. Une étrange boite scellée est posée sur une table au centre de la pièce.",
         img: "",
         location: "Salle de classe",
@@ -569,18 +569,18 @@ export const scenario = [
             text: "L'ouvrir",
             gaugeType: "virus",
             mod: 10,
-            nextEvent: 16
+            nextEvent: 35
           },
           {
             text: "Déguerpir",
             gaugeType: null,
             mod: null,
-            nextEvent: 20
+            nextEvent: 51
           }
         ]
       },
       {
-        id: 16,
+        id: 35,
         text: "La boite est vide, mais une odeur inconnue s'en dégage. Vous sentez votre tête tourner.",
         img: "",
         location: "Salle de classe",
@@ -589,67 +589,67 @@ export const scenario = [
             text: "Rentrer au vaisseau",
             gaugeType: null,
             mod: null,
-            nextEvent: 20
+            nextEvent: 51
           },
           {
             text: "Continuer l'exploration",
-            gaugeType: "health",
-            mod: -5,
-            nextEvent: 17
+            gaugeType: "virus",
+            mod: 10,
+            nextEvent: 37
           }
         ]
       },
       {
-        id: 17,
+        id: 37,
         text: "Vous entrez dans un couloir mais vous peinez à avancer tant l'odeur persiste. Deux portes se trouvent au fond de ce couloir.",
         img: "",
-        location: "Couloir",
+        location: "Couloir de l'école",
         answers: [
           {
             text: "Entrer dans la porte 1",
             gaugeType: "health",
             mod: -5,
-            nextEvent: 18
+            nextEvent: 41
           },
           {
             text: "Entrer dans la porte 2",
             gaugeType: "virus",
             mod: 5,
-            nextEvent: 19
+            nextEvent: 39
           }
         ]
       },
       {
-        id: 18,
+        id: 41,
         text: "L'odeur se dissipe et vous reprenez vos esprits. Vous trouvez une note manuscrite presque illisible, vous parvenez à déchiffrer les lettres B, K, R.",
         img: "",
-        location: "Porte 1",
+        location: "Porte 1 dans l'école",
         answers: [
           {
             text: "Retourner au vaisseau",
             gaugeType: null,
             mod: null,
-            nextEvent: 20
+            nextEvent: 51
           },
         ]
       },
       {
-        id: 19,
+        id: 39,
         text: "C'est un cul-de-sac, l'odeur se fait de plus en plus entêtante, vous manquez de vous évanouir, vous ne pouvez rester plus longtemps ici.",
         img: "",
-        location: "Porte 2",
+        location: "Porte 2 dans l'école",
         answers: [
           {
             text: "Entrer tout de même dans la porte 1",
             gaugeType: "health",
             mod: -5,
-            nextEvent: 18
+            nextEvent: 41
           },
           {
             text: "Fuir",
             gaugeType: "virus",
             mod: 5,
-            nextEvent: 20
+            nextEvent: 51
           }
         ]
       },

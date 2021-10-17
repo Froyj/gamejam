@@ -18,7 +18,7 @@ h1 {
 }
 
 .chapter1 {
-  padding-top: 5rem ;
+  padding-top: 1rem ;
   padding-bottom: 10rem;
   background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("http://localhost:3000/assets/chapter1-background.jpg");
   background-position: center;

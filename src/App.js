@@ -48,11 +48,10 @@ function App() {
   // remise a zero de l'event quand changement de chapitre
   useEffect(() => {
     if (currentChapter.id === 1) {
-      if (gauges.health < 60) {
+      if (gauges.health.progress < 60) {
         handleEvent(0)
       } else {
         handleEvent(1)
-
       }
     }
   }, [currentChapter])
@@ -106,13 +105,13 @@ function App() {
         <Route path="/chapter2">
           <div className="App chapter2">
             <JaugeBar gaugesLvl={gauges} />
-            <Card event={currentEvent} />
+            <Card event={currentEvent} handleAnswer={handleAnswer}/>
           </div>
         </Route>
         <Route path="/chapter3">
           <div className="App chapter3">
             <JaugeBar gaugesLvl={gauges} />
-            <Card event={currentEvent} />
+            <Card event={currentEvent} handleAnswer={handleAnswer}/>
           </div>
         </Route>
       </Switch>

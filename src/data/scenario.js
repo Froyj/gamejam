@@ -210,7 +210,7 @@ export const scenario = [
       {
         id: 6,
         text: "Vous vous extirpez de votre vaisseau sans que l'inconnu ne vous repère au prix d'une douleur violente",
-        img: "/assets/pain.png",
+        img: "/assets/CrashPain.png",
         location: "Coordonnées inconnues sur NH-781",
         answers: [
           {
@@ -305,8 +305,8 @@ export const scenario = [
       },
       {
         id: 18,
-        text: "Apres quelques heures de mqrche vous atteignez enfin la forêt ou tout a commencé",
-        img: "/assets/Cartoon_Forest_BG_1.png",
+        text: "Apres quelques heures de marche vous atteignez enfin la forêt ou tout a commencé",
+        img: "/assets/Cartoon_Forest_BG_01.png",
         location: "Une habitation sur NH-781",
         answers: [
           {

@@ -65,7 +65,7 @@ export const scenario = [
       {
         id: 3,
         text: "Le bruissement de fond émis par la radio semble s'interrompre et vous avez l'impression d'entendre quelqu'un respirer mais personne ne s'exprime",
-        img: "",
+        img: "/assets/radio.jpg",
         location: "A bord du vaisseau",
         answers: [
           {
@@ -83,7 +83,7 @@ export const scenario = [
       {
         id: 4,
         text: "Au bout de quelques minutes de survol de la zone, vous finissez par recevoir un signal émis par une balise de détresse",
-        img: "",
+        img: "/assets/balisededetresse.png",
         location: "A bord du vaisseau",
         answers: [
           {
@@ -103,7 +103,7 @@ export const scenario = [
       {
         id: 5,
         text: "Un tir ennemi vous frole de peu !",
-        img: "",
+        img: "/assets/missile.png",
         location: "A bord du vaisseau",
         answers: [
           {
@@ -123,7 +123,7 @@ export const scenario = [
       {
         id: 6,
         text: "Avant que vous n'arriviez à réagir, un tir de canon vous heurte de plein fouet.",
-        img: "",
+        img: "/assets/explosion.png",
         location: "A bord du vaisseau",
         endOfChapter: true, // si fin de chapitre
         answers: [
@@ -137,7 +137,7 @@ export const scenario = [
       {
         id: 7,
         text: "Vous amorcez votre descente vers NH-781.",
-        img: "",
+        img: "/assets/PlanetNH-781.png",
         location: "A bord du vaisseau",
         endOfChapter: true,
         answers: [

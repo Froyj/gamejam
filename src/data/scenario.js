@@ -159,7 +159,6 @@ export const scenario = [
     name: "Premier contact",
     events: [
       // event.id = 0 ==> le point de depart si on s'est crash
-      // event.id = 1 ==> le point de depart si on a atterri en douceur
       {
         id: 0,
         text: "Vous reprenez péniblement vos esprits, votre vaisseau n'est que faiblement endommagé, cependant vous vous êtes blessé pendant le crash.",
@@ -272,18 +271,59 @@ export const scenario = [
       },
       {
         id: 14,
-        text: "Il semblerait que certains d'entre nous soient immunisés à la maladie, au vu des tâches qui commencent à apparaître sur votre corps, il ne semble pas que cela soit votre cas.",
+        text: "Apres moults explications, vous comprenez que suite à une invasion d'écureuils la maladie s'est rapidement répandue",
         img: "/assets/JackilynTalking.png",
         location: "Une habitation sur NH-781",
         answers: [
           {
-            text: "Continuer d'écouter",
-            gaugeType: null,
-            mod: null,
-            nextEvent: 14
+            text: "Vous decidez d'aller inspecter la forêt pour trouver l'origine de l'épidémie. Vous vous mettez en route",
+            gaugeType: "contamination",
+            mod: 10,
+            nextEvent: 18
+          },
+          {
+            text: "Vous continuez de l'écouter",
+            gaugeType: "contamination",
+            mod: 30,
+            nextEvent: 16
           },
         ]
       },
+      {
+        id: 16,
+        text: "Jackilyn commence à vous raconter ses anectotes de jeunesse, et rapidement vous sentez la vie vous quitter. A force d'attendre ici l'infection se répand",
+        img: "/assets/JackilynTalking.png",
+        location: "Une habitation sur NH-781",
+        answers: [
+          {
+            text: "Vous décidez d'enfiler ",
+            gaugeType: "contamination",
+            mod: 10,
+            nextEvent: 16
+          },
+        ]
+      },
+      {
+        id: 18,
+        text: "Apres quelques heures de mqrche vous atteignez enfin la forêt ou tout a commencé",
+        img: "/assets/Cartoon_Forest_BG_1.png",
+        location: "Une habitation sur NH-781",
+        answers: [
+          {
+            text: "Vous decidez d'aller inspecter la forêt pour trouver l'origine de l'épidémie",
+            gaugeType: "contamination",
+            mod: 10,
+            nextEvent: 16
+          },
+          {
+            text: "Vous decidez d'aller inspecter la forêt pour trouver l'origine de l'épidémie",
+            gaugeType: "contamination",
+            mod: 10,
+            nextEvent: 18
+          },
+        ]
+      },
+      // event.id = 1 ==> le point de depart si on a atterri en douceur
       {
         id: 1,
         text: "Après avoir atterri dans une zone degagée, vous sortez sur la planête NH-781. Vous détectez au loin un signal",
@@ -347,7 +387,7 @@ export const scenario = [
       {
         id: 3,
         text: "Vous vous rapprocher de l'agitation. Vous attrapez un papier volant, en rouge est noté: THE END IS NEAR",
-        img: "",
+        img: "/assests/RedPaper.png",
         location: "Le tunnel",
         answers: [
           {
@@ -367,7 +407,7 @@ export const scenario = [
       {
         id: 4,
         text: "Une ombre derrière un wagon accidenté attire votre oeil. Vous le contournez et découvrez un drap flottant entourant un campement abandonné.",
-        img: "",
+        img: "/assets/postapocalypse4.png",
         location: "Le tunnel",
         answers: [
           {
@@ -387,7 +427,7 @@ export const scenario = [
       {
         id: 5,
         text: "Une porte du personnel est entrouverte, vous fouillez cette pièce et trouvez des seringues usagées. Il n'y a rien d'autre à voir ici.",
-        img: "",
+        img: "/assets/Syringe-Underground.png",
         location: "Quai de la station",
         answers: [
           {
@@ -407,7 +447,7 @@ export const scenario = [
       {
         id: 6,
         text: "A BASE DE MOLECULES DE WCS-33 ET DE ZESPLIOL",
-        img: "",
+        img: "/assets/Syringe-Underground-Notice.png",
         location: "Quai de la station",
         answers: [
           {
@@ -421,20 +461,195 @@ export const scenario = [
       {
         id: 7,
         text: "Vous voyez au loin un bâtiment qui ressemble à une station essence",
-        img: "",
+        img: "/assets/Petrol-Station.png",
         location: "Grande Rue",
         answers: [
           {
-            text: "Passer devant",
+            text: "Ignorer et s'enfoncer dans la ville",
             gaugeType: null,
             mod: null,
-            nextEvent: 5
+            nextEvent: 14
           },
           {
             text: "Se diriger vers le bâtiment",
+            gaugeType: "health",
+            mod: -5,
+            nextEvent: 8
+          }
+        ]
+      },
+      {
+        id: 8,
+        text: "Une fois à la station, vous constatez qu'il y a des pompes à essence mais elles sont vides.",
+        img: "/assets/Petrol-Station.png",
+        location: "Station essence",
+        answers: [
+          {
+            text: "Vous retournez dans la rue",
             gaugeType: null,
             mod: null,
-            nextEvent: 7
+            nextEvent: 14
+          },
+          {
+            text: "Explorer le bâtiment",
+            gaugeType: null,
+            mod: null,
+            nextEvent: 9
+          }
+        ]
+      },
+      
+      {
+        id: 9,
+        text: "A l'intérieur du bâtiment vous trouvez un tube en plastique sur le sol",
+        img: "/assets/Petrol-Station-Tube.png",
+        location: "Station essence",
+        answers: [
+          {
+            text: "Ne pas ramasser et retourner dans la rue",
+            gaugeType: null,
+            mod: null,
+            nextEvent: 14
+          },
+          {
+            text: "Ramasser",
+            gaugeType: null,
+            mod: null,
+            nextEvent: 10
+          }
+        ]
+      },
+      {
+      id: 10,
+      text: "Il s'agit d'un tube pour syphonner les voitures. Vous testez plusieurs voitures, elles sont à sec.",
+      img: "",
+      location: "Station essence",
+      answers: [
+        {
+          text: "Continuer ?",
+          gaugeType: null,
+          mod: null,
+          nextEvent: 14
+        },
+        {
+          text: "Vous n'en voyez pas l'utilité et retournez dans la rue",
+          gaugeType: null,
+          mod: null,
+          nextEvent: 14
+        }
+      ]
+    },
+      {
+        id: 14,
+        text: "Quelques rues plus loin, vous remarquez une école primaire délabrée dont le mur ébréché permet une intrusion.",
+        img: "",
+        location: "Avenue détruite",
+        answers: [
+          {
+            text: "Retourner au vaisseau",
+            gaugeType: null,
+            mod: null,
+            nextEvent: 20
+          },
+          {
+            text: "Entrer dans l'école",
+            gaugeType: "health",
+            mod: -10,
+            nextEvent: 15
+          }
+        ]
+      },
+      {
+        id: 15,
+        text: "La salle de classe est couverte de poussière et de déchets. Une étrange boite scellée est posée sur une table au centre de la pièce.",
+        img: "",
+        location: "Salle de classe",
+        answers: [
+          {
+            text: "L'ouvrir",
+            gaugeType: "virus",
+            mod: 10,
+            nextEvent: 16
+          },
+          {
+            text: "Déguerpir",
+            gaugeType: null,
+            mod: null,
+            nextEvent: 20
+          }
+        ]
+      },
+      {
+        id: 16,
+        text: "La boite est vide, mais une odeur inconnue s'en dégage. Vous sentez votre tête tourner.",
+        img: "",
+        location: "Salle de classe",
+        answers: [
+          {
+            text: "Rentrer au vaisseau",
+            gaugeType: null,
+            mod: null,
+            nextEvent: 20
+          },
+          {
+            text: "Continuer l'exploration",
+            gaugeType: "health",
+            mod: -5,
+            nextEvent: 17
+          }
+        ]
+      },
+      {
+        id: 17,
+        text: "Vous entrez dans un couloir mais vous peinez à avancer tant l'odeur persiste. Deux portes se trouvent au fond de ce couloir.",
+        img: "",
+        location: "Couloir",
+        answers: [
+          {
+            text: "Entrer dans la porte 1",
+            gaugeType: "health",
+            mod: -5,
+            nextEvent: 18
+          },
+          {
+            text: "Entrer dans la porte 2",
+            gaugeType: "virus",
+            mod: 5,
+            nextEvent: 19
+          }
+        ]
+      },
+      {
+        id: 18,
+        text: "L'odeur se dissipe et vous reprenez vos esprits. Vous trouvez une note manuscrite presque illisible, vous parvenez à déchiffrer les lettres B, K, R.",
+        img: "",
+        location: "Porte 1",
+        answers: [
+          {
+            text: "Retourner au vaisseau",
+            gaugeType: null,
+            mod: null,
+            nextEvent: 20
+          },
+        ]
+      },
+      {
+        id: 19,
+        text: "C'est un cul-de-sac, l'odeur se fait de plus en plus entêtante, vous manquez de vous évanouir, vous ne pouvez rester plus longtemps ici.",
+        img: "",
+        location: "Porte 2",
+        answers: [
+          {
+            text: "Entrer tout de même dans la porte 1",
+            gaugeType: "health",
+            mod: -5,
+            nextEvent: 18
+          },
+          {
+            text: "Fuir",
+            gaugeType: "virus",
+            mod: 5,
+            nextEvent: 20
           }
         ]
       },

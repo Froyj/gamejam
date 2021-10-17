@@ -1,5 +1,9 @@
 
 export const scenario = [
+  // A LA FIN DU CHAPITRE 1 SOIT :
+    //  PLUS DE 60 DE VIE ET PLUS DE 60 DE FUEL
+    //  PLUS DE 60 DE VIE ET MOINS DE 60 DE FUEL
+    //  MOINS DE 60 PV 
   {
     id: 0,
     name: "The beginning",

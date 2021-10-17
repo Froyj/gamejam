@@ -6,6 +6,8 @@ import Landing from './components/Landing'
 import landing from './data/landing';
 import './App.css';
 
+import scenario from './data/scenario'
+
 function App() {
   const [gauges, setGauges] = useState({
     fuel: {
@@ -47,28 +49,15 @@ function App() {
     })
   }
 
-  const tryEvent = ({
-      id: 1,
-      text: "Vous vous approchez de la planète NH-781. Voulez-vous tenter de les contacter ?",
-      img: "/assets/planet1.png",
-      location: "A bord du vaisseau",
-      firstChoise: "Oui",
-      secondChoise: "Non",
-      answers: [
-          {
-              id: 1.1,
-              text: "Oui",
-              type: "fioul",
-                  value: -2
-          },
-          {
-              id: 1.2,
-              text: "Non",
-              type: "virus",
-              value: 0   
-          }
-      ]
-  })
+  const handleChapter = (id) => {
+    const chapter = scenario.find(c => c.id === id)
+    setCurrentChapter(chapter)
+  }
+
+  const handleEvent = (id) => {
+    const event = currentChapter.events.find(e => e.id === id)
+    setCurrentEvent(event)
+  }
 
 
   return (

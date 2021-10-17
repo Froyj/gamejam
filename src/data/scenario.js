@@ -492,7 +492,7 @@ export const scenario = [
           },
           {
             text: "Explorer le bâtiment",
-            gaugeType: health,
+            gaugeType: "health",
             mod: -5,
             nextEvent: 25
           }
@@ -507,7 +507,7 @@ export const scenario = [
         answers: [
           {
             text: "Ne pas ramasser et retourner dans la rue",
-            gaugeType: health,
+            gaugeType: "health",
             mod: -5,
             nextEvent: 31
           },
